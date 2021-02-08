@@ -4,7 +4,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 //Setting up PORT
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 //Require Models for DB
 const db = require("./models");
@@ -17,7 +17,17 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Connecting to the db with mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+require('dotenv').config()
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true,
+useUnifiedTopology: true,
+useCreateIndex: true,
+useFindAndModify: false 
+}
+);
+
+//Linking to Routes
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 //Running the app
 app.listen(PORT, () => {
