@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Slab:wght@200&family=Ultra&display=swap');
+/* FONTS
+USE FOR: App Header || font-family: 'Aclonica', sans-serif;
+USE FOR: Nav Bar, Workout Fonts || font-family: 'Josefin Slab', serif;
+font-family: 'Ultra', serif;
+
+COLORS
+--wheat: #efd6acff;
+--mahogany: #c44900ff;
+--skobeloff: #0f7173ff;
+--maize-crayola: #e2c044ff;
+*/
+
+
 *,
 *::before,
 *::after {
@@ -12,17 +26,20 @@ body,
   height: 100%;
 }
 
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 nav {
-  background-color: #5793fd;
-  color: #ffffff;
+  color: #FFDB58;
+  background-color: #0f7173;
   height: 80px;
   padding: 10px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Josefin Slab', serif;
+  
 }
 
 a,
@@ -42,10 +59,14 @@ header {
   padding-top: 80px;
   text-align: center;
   font-size: 1.5rem;
+  
 }
 
 header h1 {
   transform: skewX(-2deg);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 50px;
+  color: #0f7173;
 }
 
 select {
@@ -100,10 +121,19 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
+  background-color: #FFDB58;
   padding-bottom: 100px;
 }
-
+#this {
+  font-family: 'Aclonica', sans-serif;
+  color: #0f7173;
+}
+#stats {
+  background-color: #FFDB58;
+}
+#statswhite {
+  background-color: white;
+}
 .card.m-auto,
 .m-auto {
   margin: 0 auto;
@@ -365,11 +395,13 @@ form > button {
 .prev-workout h3 {
   font-size: 2rem;
   width: 100%;
+  font-family: 'Aclonica', sans-serif;
 }
 
 .prev-workout p {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 /* .workout .card {
@@ -428,6 +460,14 @@ form > button {
 .resistance-form {
   padding: 10px;
 }
+#continue-btn {
+  font-family: 'Aclonica', sans-serif;
+}
+
+#new-btn {
+  font-family: 'Aclonica', sans-serif;
+}
+
 
 @keyframes toast {
   50% {
