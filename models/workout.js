@@ -38,12 +38,16 @@ const workoutSchema = new Schema({
     }
 }, {
     toJSON: {
+        //if you want virtual field to be displayed on client side, then set virtuals: true 
         virtuals: true
     }
 });
 
-//LOOK UP "Virtuals"
-workoutSchema.virtual("totalDuration").get(function() {
+//Declare virtual on workout schema
+workoutSchema
+.virtual("totalDuration")
+.get(function() {
+    //Use reduce to get sum of exercise durations
     return this.exercises.reduce((total, exercise) => {
         return total + exercise.duration;
     }, 0)
