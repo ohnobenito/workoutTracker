@@ -1,5 +1,5 @@
 # **Get FIT!**
-A Workout Tracking application
+# A Workout Tracking application
 
 ## Description
 Get FIT! is a workout tracking application that allows the user to add and store exercises in order to keep better track of their fitness. The user can add exercises by type (resistance or cardio) and fill in the fields that apply. On the application, the user can also check their dashboard which will display all of their stats in colorized charts.
