@@ -36,7 +36,7 @@ module.exports = (app) => {
                 res.json(err);
             });
         function updateWorkout(exercises){
-            db.Workout.findByIdAndUpdate(workID, {exercises: expercises}, function (err, doc){
+            db.Workout.findByIdAndUpdate(workID, {exercises: exercises}, function (err, doc){
                 if (err) {
                     console.log(err)
                 }
@@ -44,4 +44,15 @@ module.exports = (app) => {
         };
 
     });
-}
+
+    //Get Workout Range
+    app.get("/api/workouts/range", (req, res) => {
+        db.Workout.find({})
+        .then(workout => {
+            res.json(workout);
+        })
+        .catch(err => {
+            res.json(err);
+        });
+    });
+};
