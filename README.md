@@ -7,7 +7,8 @@ Get FIT! is a workout tracking application that allows the user to add and store
 
 ![Badge:](https://img.shields.io/badge/License-mit-brightgreen)
 
-![**Launched Application GIF:**](/public/img/demo.gif)
+![**Screen Shots of Deployed Application:**](/public/img/ss1.png)
+![**Screen Shots of Deployed Application:**](/public/img/ss2.png)
 
 
 ## Table of Contents
